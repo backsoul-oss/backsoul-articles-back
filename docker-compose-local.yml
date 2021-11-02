@@ -1,0 +1,16 @@
+version: "3"
+services:
+  database:
+    image: "postgres" # use latest official postgres version
+    env_file:
+      - database.env # configure postgres
+    volumes:
+      - database-data:/var/lib/postgresql/data/ # persist data even if container shuts down
+    ports:
+      # expose port 5432 to 54329
+      - "5439:5432"
+
+volumes:
+  database-data: # named volumes can be managed easier using docker-compose
+
+# url postgres://django_user:django_pass@localhost:5439/articles_db
