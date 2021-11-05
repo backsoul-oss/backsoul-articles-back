@@ -39,11 +39,11 @@ CLOUDINARY_STORAGE = {
 SECRET_KEY = config('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 # ALLOWED_HOSTS = ['back.articles.backsoul.xyz']
-ALLOWED_HOSTS = ['http://back.articles.backsoul.xyz', 'localhost', '127.0.0.1']
-CORS_ORIGIN_WHITELIST = ('http://localhost:3000',)
+ALLOWED_HOSTS = ['backsoul-articles-front.web.app','articles.backsoul.xyz']
+# CORS_ORIGIN_WHITELIST = ('http://localhost:3000',)
 
 # Application definition
 
