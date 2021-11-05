@@ -41,7 +41,8 @@ SECRET_KEY = config('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['back.articles.backsoul.xyz']
+# ALLOWED_HOSTS = ['back.articles.backsoul.xyz']
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
