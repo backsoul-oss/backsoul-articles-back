@@ -42,7 +42,7 @@ SECRET_KEY = config('SECRET_KEY')
 DEBUG = False
 
 # ALLOWED_HOSTS = ['back.articles.backsoul.xyz']
-ALLOWED_HOSTS = ['https://backsoul-articles-front.web.app','https://articles.backsoul.xyz']
+ALLOWED_HOSTS = ['*']
 
 # Application definition
 
