@@ -42,8 +42,8 @@ SECRET_KEY = config('SECRET_KEY')
 DEBUG = False
 
 # ALLOWED_HOSTS = ['back.articles.backsoul.xyz']
-ALLOWED_HOSTS = ['backsoul-articles-front.web.app','articles.backsoul.xyz']
-CORS_ORIGIN_WHITELIST = ('backsoul-articles-front.web.app','articles.backsoul.xyz')
+ALLOWED_HOSTS = ['https://backsoul-articles-front.web.app','https://articles.backsoul.xyz']
+CORS_ORIGIN_WHITELIST = ('https://backsoul-articles-front.web.app/','https://articles.backsoul.xyz')
 
 # Application definition
 
