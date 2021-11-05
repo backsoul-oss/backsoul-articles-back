@@ -6,18 +6,14 @@ from django.db.models import Q
 from graphene import String, List
 from graphene_django.converter import convert_django_field
 from graphene import ObjectType, String, Int
-
-
+from category.schema import CategoryType
 @convert_django_field.register(Article)
 def convert_field_to_string(field, registry=None):
     return List(String, source='get_articles')
 
-
 class ArticleType(DjangoObjectType):
-
     class Meta:
         model = Article
-        fields = ('id', 'title', 'content', 'image', 'created_at', '_slug','text_description')
 
 
 class Query(graphene.AbstractType):

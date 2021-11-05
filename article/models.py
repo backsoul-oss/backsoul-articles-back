@@ -12,5 +12,4 @@ class Article(models.Model):
     created_at = models.DateTimeField(default=timezone.now)
     image = models.ImageField(upload_to='images/', blank=True)
     text_description = models.TextField(blank=True)
-    category = models.ForeignKey(
-        Category, on_delete=models.CASCADE, default=0)
+    categories = models.ManyToManyField(Category)
