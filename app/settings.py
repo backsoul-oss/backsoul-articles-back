@@ -43,7 +43,7 @@ DEBUG = False
 
 # ALLOWED_HOSTS = ['back.articles.backsoul.xyz']
 ALLOWED_HOSTS = ['backsoul-articles-front.web.app','articles.backsoul.xyz']
-# CORS_ORIGIN_WHITELIST = ('http://localhost:3000',)
+CORS_ORIGIN_WHITELIST = ('backsoul-articles-front.web.app','articles.backsoul.xyz')
 
 # Application definition
 
