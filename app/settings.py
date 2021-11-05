@@ -43,7 +43,6 @@ DEBUG = False
 
 # ALLOWED_HOSTS = ['back.articles.backsoul.xyz']
 ALLOWED_HOSTS = ['https://backsoul-articles-front.web.app','https://articles.backsoul.xyz']
-CORS_ORIGIN_WHITELIST = ('https://backsoul-articles-front.web.app/','https://articles.backsoul.xyz')
 
 # Application definition
 
