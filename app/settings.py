@@ -39,11 +39,11 @@ CLOUDINARY_STORAGE = {
 SECRET_KEY = config('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 # ALLOWED_HOSTS = ['back.articles.backsoul.xyz']
-ALLOWED_HOSTS = ['*']
-
+ALLOWED_HOSTS = ['http://back.articles.backsoul.xyz', 'localhost', '127.0.0.1']
+CORS_ORIGIN_WHITELIST = ('http://localhost:3000',)
 
 # Application definition
 
@@ -59,11 +59,13 @@ INSTALLED_APPS = [
     'graphene_django',
     'article',
     'category',
+    'corsheaders',
 ]
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
+    'corsheaders.middleware.CorsMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
