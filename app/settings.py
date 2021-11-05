@@ -42,8 +42,8 @@ SECRET_KEY = config('SECRET_KEY')
 DEBUG = False
 
 # ALLOWED_HOSTS = ['back.articles.backsoul.xyz']
-ALLOWED_HOSTS = ['https://backsoul-articles-front.web.app','https://backsoul-articles-back.herokuapp.com']
-CORS_ORIGIN_WHITELIST = ('https://backsoul-articles-front.web.app','https://backsoul-articles-back.herokuapp.com')
+ALLOWED_HOSTS = ['*']
+CORS_ORIGIN_WHITELIST = ('https://backsoul-articles-front.web.app')
 # Application definition
 
 INSTALLED_APPS = [
