@@ -67,7 +67,7 @@ pyinstaller-hooks-contrib==2020.11
 pylint==2.6.0
 PyMySQL==1.0.2
 pynput==1.7.2
-pyobjc-cor
+pyobjc-core==2.5.1
 pyobjc-framework-Cocoa==7.1
 pyobjc-framework-Quartz==7.1
 pyppeteer==0.2.5
