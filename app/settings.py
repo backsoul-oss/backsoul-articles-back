@@ -41,9 +41,12 @@ SECRET_KEY = config('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-# ALLOWED_HOSTS = ['back.articles.backsoul.xyz']
-ALLOWED_HOSTS = ['articles.backsoul.xyz','backsoul-articles-back.herokuapp.com']
-CORS_ORIGIN_WHITELIST = ('https://articles.backsoul.xyz','https://backsoul-articles-back.herokuapp.com')
+# PROD
+#ALLOWED_HOSTS = ['articles.backsoul.xyz','backsoul-articles-back.herokuapp.com']
+#CORS_ORIGIN_WHITELIST = ('https://articles.backsoul.xyz','https://backsoul-articles-back.herokuapp.com')
+# DEV
+ALLOWED_HOSTS = ['*']
+CORS_ORIGIN_WHITELIST = ('http://127.0.0.1','http://localhost','http://localhost:3000')
 # Application definition
 
 INSTALLED_APPS = [
