@@ -42,11 +42,13 @@ SECRET_KEY = config('SECRET_KEY')
 DEBUG = False
 
 # PROD
-#ALLOWED_HOSTS = ['articles.backsoul.xyz','backsoul-articles-back.herokuapp.com']
-#CORS_ORIGIN_WHITELIST = ('https://articles.backsoul.xyz','https://backsoul-articles-back.herokuapp.com')
+ALLOWED_HOSTS = ['articles.backsoul.xyz',
+                 'backsoul-articles-back.herokuapp.com']
+CORS_ORIGIN_WHITELIST = ('https://articles.backsoul.xyz',
+                         'https://backsoul-articles-back.herokuapp.com')
 # DEV
-ALLOWED_HOSTS = ['*']
-CORS_ORIGIN_WHITELIST = ('http://127.0.0.1','http://localhost','http://localhost:3000')
+# ALLOWED_HOSTS = ['*']
+# CORS_ORIGIN_WHITELIST = ('http://127.0.0.1', 'http://localhost', 'http://localhost:3000')
 # Application definition
 
 INSTALLED_APPS = [
@@ -62,6 +64,7 @@ INSTALLED_APPS = [
     'article',
     'category',
     'corsheaders',
+    'mdeditor',
 ]
 
 MIDDLEWARE = [

@@ -23,4 +23,5 @@ urlpatterns = [
     path('', include('article.urls')),
     path('admin/', admin.site.urls),
     path("graphql", csrf_exempt(GraphQLView.as_view(graphiql=True))),
+    path('mdeditor/', include('mdeditor.urls'))
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
