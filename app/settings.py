@@ -43,9 +43,9 @@ DEBUG = False
 
 # PROD
 ALLOWED_HOSTS = ['articles.backsoul.xyz',
-                 'backsoul-articles-back.herokuapp.com']
+                 'backsoul-articles-back.herokuapp.com', 'microservices.backsoul.xyz']
 CORS_ORIGIN_WHITELIST = ('https://articles.backsoul.xyz',
-                         'https://backsoul-articles-back.herokuapp.com')
+                         'https://backsoul-articles-back.herokuapp.com', 'microservices.backsoul.xyz')
 # DEV
 # ALLOWED_HOSTS = ['*']
 # CORS_ORIGIN_WHITELIST = ('http://127.0.0.1', 'http://localhost', 'http://localhost:3000')
